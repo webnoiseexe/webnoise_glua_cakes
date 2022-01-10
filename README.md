@@ -3,3 +3,6 @@ A repository of maybe useful cakes for gLua. I don't want to do documentation fo
 
 # cl_emotesbttv.lua
 cake that will help download emotes from BTTV channels, based on EasyChat by Earu.
+
+# sh_utils.lua
+Utils for managing some objects
