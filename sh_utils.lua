@@ -15,7 +15,7 @@ end
 function util.RandomPosOnEntity(entity, spacing)
 	local pos = entity:GetPos()
 	
-	local sidess = util.GetEntitySides(entity)
+	local sides = util.GetEntitySides(entity)
 	local top, bottom = sides.top, sides.bottom
 	local left, right = sides.left, sides.right
 	
