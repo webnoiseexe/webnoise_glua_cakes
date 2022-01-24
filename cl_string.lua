@@ -1,7 +1,5 @@
 function string.Wrap(text, font, width)
 	local temp = {}
-	local lastx = 0
-	local lasty = 0
 	local wide = 0
 	
 	local cur = ''

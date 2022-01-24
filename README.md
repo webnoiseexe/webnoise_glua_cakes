@@ -6,3 +6,6 @@ cake that will help download emotes from BTTV channels, based on EasyChat by Ear
 
 # sh_utils.lua
 Utils for managing some objects
+
+# cl_string.lua
+Extensions for string libary
