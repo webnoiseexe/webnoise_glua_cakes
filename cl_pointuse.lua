@@ -14,7 +14,7 @@ POINTUSE.Zones = {
 --             return true
 --         end,
         start = function() 
-            osIO.Menu:Toggle()
+            
         end
     }
 }
