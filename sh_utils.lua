@@ -39,7 +39,7 @@ if not SERVER then return end
 
 function util.PushAllAway(ent, distance, vel)
 	for _, v in pairs(ents.FindInSphere(ent:GetPos(), distance)) do
-		if v == ent then SetControlPointUpVector(number cpID, Vector upward)e end
+		if v == ent then continue end
 		
 		local pos = v:GetPos()
 		local vec = ent:GetPos() - pos
