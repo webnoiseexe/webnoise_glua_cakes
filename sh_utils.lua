@@ -27,6 +27,14 @@ function util.RandomPosOnEntity(entity, spacing)
 	return pos
 end
 
+function util.InFOV(ent1, ent2, fov, ang) // that from Garry's Mod discord server (https://discord.com/channels/565105920414318602/567617926991970306/975335373842554891)
+	local sp, ep = ent1:GetPos(), ent2:GetPos()
+
+	local ang = (sp - ep):Angle() - ang
+	ang:Normalize()
+	return math.abs(ang.yaw) < fov and math.abs(ang.pitch) < fov
+end
+
 if not SERVER then return end
 
 function util.PushAllAway(ent, distance, vel)
