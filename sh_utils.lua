@@ -30,7 +30,7 @@ end
 function util.InFOV(ent1, ent2, fov, ang) -- that from Garry's Mod discord server (https://discord.com/channels/565105920414318602/567617926991970306/975335373842554891)
 	local sp, ep = ent1:GetPos(), ent2:GetPos()
 
-	local ang = (sp - ep):Angle() - ang
+	local ang = (ep - sp):Angle() - ang
 	ang:Normalize()
 	return math.abs(ang.yaw) < fov and math.abs(ang.pitch) < fov
 end
